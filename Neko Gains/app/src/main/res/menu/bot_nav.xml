@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id ="@+id/nav_home"
+        android:icon = "@drawable/ic_home_black_24dp"
+        android:title = "@string/Home_Button" />
+
+    <item android:id ="@+id/nav_progress"
+        android:icon = "@drawable/ic_trending_up_black_24dp"
+        android:title = "@string/Progress_Button" />
+
+    <item android:id ="@+id/nav_workout"
+        android:icon = "@drawable/ic_fitness_center_black_24dp"
+        android:title = ""/>
+
+    <item android:id ="@+id/nav_store"
+        android:icon = "@drawable/ic_store_black_24dp"
+        android:title = "@string/Store_Button" />
+
+    <item android:id ="@+id/nav_setting"
+        android:icon = "@drawable/ic_settings_black_24dp"
+        android:title = "@string/Setting_Button" />
+
+</menu>

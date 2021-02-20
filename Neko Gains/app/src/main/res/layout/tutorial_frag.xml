@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/workoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:width="1000px"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="60dp"
+        android:text="Exercise"/>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/finishButton"
+        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Start"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/workoutDescription"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="501dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="137dp"
+        android:text="Workout Description"
+        android:textSize="24dp" />
+
+</RelativeLayout>

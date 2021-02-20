@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:id="@+id/createworkoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workout Name"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="WorkoutName"
+            android:singleLine="true"
+            android:id="@+id/customworkoutName"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createworkoutName"
+        android:layout_above="@+id/customworkoutbuttons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Lunges-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lunges"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addLunges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Squats-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addSquats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Run-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Run"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Burpees-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burpees"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addBurpees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Jacks-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jacks"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addJacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Push Ups-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push ups"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addPushups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Chin Ups-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chin ups"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addChinups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Bench Dips-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bench Dips"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addBenchdips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Sit Ups-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sit Ups"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addSitups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Planks-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planks"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addPlanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+        <!--Leg Raises-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leg Raises"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/addLegraises"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorText"
+                android:background="@color/colorAccent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+<RelativeLayout
+    android:id="@+id/customworkoutbuttons"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/customworkoutSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="Save"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/customworkoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:text="Back"
+        android:textColor="@color/colorText"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

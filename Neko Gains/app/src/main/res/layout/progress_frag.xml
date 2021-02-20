@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/progress"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="114dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:text="PROGRESS"
+      android:textSize="40sp"
+      android:layout_marginLeft="114dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="130dp"
+      android:orientation="horizontal">
+
+   <ImageButton
+       android:id="@+id/chinUpsButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/chin_ups" />
+
+   <ImageButton
+       android:id="@+id/lungesButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/lunges" />
+
+   <ImageButton
+       android:id="@+id/burpeesButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/burpees" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="130dp"
+      android:orientation="horizontal">
+
+   <ImageButton
+       android:id="@+id/sitUpsButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/sit_ups" />
+
+   <ImageButton
+       android:id="@+id/runButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/run" />
+
+   <ImageButton
+       android:id="@+id/pushUpsButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/push_ups" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="130dp"
+      android:orientation="horizontal">
+
+   <ImageButton
+       android:id="@+id/benchDipsButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/bench_dips" />
+
+   <ImageButton
+       android:id="@+id/squatsButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/squats" />
+
+   <ImageButton
+       android:id="@+id/planksButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/planks" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="130dp"
+      android:orientation="horizontal">
+
+   <ImageButton
+       android:id="@+id/legRaisesButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/leg_raises" />
+
+   <ImageButton
+       android:id="@+id/jacksButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/jacks" />
+
+   <ImageButton
+       android:id="@+id/weightLossButton"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       app:srcCompat="@drawable/weight_loss" />
+
+  </LinearLayout>
+
+ </LinearLayout>
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:id="@+id/ProgressScreen"
+     android:layout_width="412dp"
+     android:layout_height="match_parent"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginStart="0dp"
+     android:layout_marginLeft="0dp"
+     android:layout_marginTop="0dp">
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

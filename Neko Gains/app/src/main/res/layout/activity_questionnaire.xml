@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/opensans_extrabold"
+                    android:text="CREATE YOUR PROFILE"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+                <!-- Question 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="What is your name?"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:textColor="#555555"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                    <EditText
+                        android:id="@+id/q_name"
+                        android:text="Gary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="200dp"
+                        android:singleLine="true"
+                        android:hint="Enter your name here"/>
+                </LinearLayout>
+                <!-- Question 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="What is your sex?"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:textColor="#555555"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+                    <RadioGroup
+                        android:id="@+id/q_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation = "vertical"
+                        android:background="@color/colorPrimaryDark">
+
+                        <RadioButton
+                            android:id="@+id/q_sex_a"
+                            android:checked="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textColor="#FFFFFF"
+                            android:buttonTint="#ffffff"
+                            />
+                        <RadioButton
+                            android:id="@+id/q_sex_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textColor="#FFFFFF"
+                            android:buttonTint="#ffffff"
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+                <!-- Question 2 -->
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="How Old Are You?"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:id="@+id/q_age"
+                    android:text="22"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="200dp"
+                    android:singleLine="true"
+                    android:hint="Enter your name here"/>
+            </LinearLayout>
+            <!-- Question 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="How Often Do You Exercise?"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+                <RadioGroup
+                    android:id="@+id/q_habit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation = "vertical"
+                    android:background="@color/colorPrimaryDark">
+
+                    <RadioButton
+                        android:id="@+id/q_habit_a"
+                        android:checked="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Do not or very seldom exercises"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                    <RadioButton
+                        android:id="@+id/q_habit_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1-2 times a week"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                    <RadioButton
+                        android:id="@+id/q_habit_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3-4 times a week"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                    <RadioButton
+                        android:id="@+id/q_habit_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5 or more times a week"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <!-- Question 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Enter Your Weight and Height"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/q_weight"
+                        android:text="60"
+                        android:inputType="numberDecimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_marginLeft="20dp"
+                        android:singleLine="true"
+                        android:hint="Enter your weight here"/>
+                    <TextView
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="kg"
+                        android:textSize="14dp"
+                        android:textColor="#555555"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp">
+                    <EditText
+                        android:id="@+id/q_height"
+                        android:text="160"
+                        android:inputType="numberDecimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:singleLine="true"
+                        android:hint="Enter your height here"/>
+                    <TextView
+                        android:fontFamily="@font/opensans_semibold"
+                        android:text="cm"
+                        android:textSize="14dp"
+                        android:textColor="#555555"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Question 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="How Intense Do You Want to Workout?"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+                <RadioGroup
+                    android:id="@+id/q_intensity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation = "vertical"
+                    android:background="@color/colorPrimaryDark">
+                    <RadioButton
+                        android:id="@+id/q_int_a"
+                        android:checked="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                    <RadioButton
+                        android:id="@+id/q_int_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Moderate"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                    <RadioButton
+                        android:id="@+id/q_int_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vigorous"
+                        android:textColor="#FFFFFF"
+                        android:buttonTint="#ffffff"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="What would you like to name your pet?"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:id="@+id/q_petname"
+                    android:text="Liton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="200dp"
+                    android:singleLine="true"
+                    android:hint="Enter your name here"/>
+            </LinearLayout>
+                <Button
+                    android:id="@+id/button_send"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Submit"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:background="@color/colorAccent"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

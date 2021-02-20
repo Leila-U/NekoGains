@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:backgroundTintMode="add"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Workout"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_centerVertical="true"
+            android:padding="4dp"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorText"
+            android:layout_toLeftOf="@id/textreps"/>
+
+        <TextView
+            android:id="@+id/textreps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Reps"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/textsets"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorText"
+            android:layout_toRightOf="@id/textreps"/>
+
+        <TextView
+            android:id="@+id/textsets"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_height="wrap_content"
+            android:text="Sets"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
